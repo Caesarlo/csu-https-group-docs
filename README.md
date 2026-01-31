@@ -14,16 +14,23 @@ Click the green **Use this template** button at the top of this repo to copy the
 
 ## Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview your documentation changes locally. To install, use the following command:
 
-```
-npm i -g mint
+```bash
+npm i -g mintlify
 ```
 
 Run the following command at the root of your documentation, where your `docs.json` is located:
 
+```bash
+mintlify dev
 ```
-mint dev
+
+### Windows Users
+If you encounter "command not recognized" errors on Windows after installing globally, you can use `npx` to run it directly:
+
+```powershell
+npx mintlify dev
 ```
 
 View your local preview at `http://localhost:3000`.
@@ -36,7 +43,7 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 
 ### Troubleshooting
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
+- If your dev environment isn't running: Run `npm i -g mintlify@latest` to ensure you have the most recent version of the CLI.
 - If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
 
 ### Resources
